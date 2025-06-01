@@ -1,7 +1,6 @@
 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +21,6 @@ const Header = () => {
             <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm">Login</Button>
-            <Button size="sm">Get Started</Button>
-          </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -46,10 +40,6 @@ const Header = () => {
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" size="sm">Login</Button>
-                <Button size="sm">Get Started</Button>
-              </div>
             </div>
           </div>
         )}
