@@ -1,6 +1,5 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Search, Users, CheckCircle, Briefcase, HeadHunter, UserCheck } from "lucide-react";
+import { Search, Users, CheckCircle, Briefcase, UserSearch, UserCheck } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -29,7 +28,7 @@ const Services = () => {
       features: ["Flexible Terms", "Quick Deployment", "Compliance Management"]
     },
     {
-      icon: HeadHunter,
+      icon: UserSearch,
       title: "Recruitment Consulting",
       description: "Strategic guidance to optimize your recruitment processes and employer branding.",
       features: ["Process Optimization", "Employer Branding", "Market Intelligence"]
